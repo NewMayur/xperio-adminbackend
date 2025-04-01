@@ -1,0 +1,17 @@
+[package]
+name = "xmart_rust_backend"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+warp = "0.3"
+tokio-tungstenite = "0.18"
+async-nats = "0.25"
+jsonwebtoken = "9"
+sqlx = { version = "0.7", features = [ "runtime-tokio-native-tls", "postgres" ] }
+config = "0.13"
+dotenv = "0.15"
+serde = { version = "1.0", features = ["derive"] }
